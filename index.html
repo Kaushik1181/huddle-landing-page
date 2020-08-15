@@ -1,70 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with alternating feature blocks</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Huddle landing page</title>
+  <!-- css styles -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script defer src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" integrity="sha384-3Nqiqht3ZZEO8FKj7GR1upiI385J92VwWNLj+FqHxtLYxd9l+WYpeqSOrLh0T12c" crossorigin="anonymous"></script>
+  <!-- bootstrap script -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <section id="title">
+    <div class="container">
+      <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light pt-5">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="images/logo.svg" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
 
-  Try It Free
+          <ul class="navbar-nav ml-md-auto text-center">
+            <li class="nav-item">
+              <button class="btn btn-light btn-lg rounded-pill shadow px-md-5 my-3 nav-button" type="submit">Try it Free</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
-  Build The Community Your Fans Will Love
+      <!-- title -->
+      <div class="row m-4 p-3 h-100">
+        <div class="col-md-5 px-3 my-auto">
+          <h1 class="main-heading">Build The Community Your Fans Will Love</h1>
+          <p class="main-description">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+            Create connections with your users as you engage in genuine discussion.</p>
+          <button class="btn btn-success btn-lg rounded-pill main-button shadow" type="button" name="button">Get Started For Free</button>
+        </div>
+        <div class="col-md-7 px-3 my-3">
+          <img class="img-fluid" src="images/illustration-mockups.svg" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
+  <section id="features">
+    <div class="container">
+      <div class="row m-4 p-3 h-100 round-border shadow">
+        <div class="col-md-6 px-md-5 my-auto">
+          <h4 class="features-title">Grow Together</h4>
+          <p class="features">Generate meaningful discussions with your audience and build a strong, loyal community. Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+        <div class="col-md-6 px-md-5 my-3">
+          <img class="img-fluid" src="images/illustration-grow-together.svg" alt="">
+        </div>
+      </div>
 
-  Get Started For Free
+      <div class="row m-4 p-3 h-100 round-border shadow">
+        <div class="col-md-6 px-md-5 my-auto">
+          <img class="img-fluid" src="images/illustration-flowing-conversation.svg" alt="">
+        </div>
+        <div class="col-md-6 px-md-5 my-3">
+          <h4 class="features-title">Flowing Conversations</h4>
+          <p class="features">You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
+        </div>
+      </div>
 
-  Grow Together
+      <div class="row m-4 p-3 h-100 round-border shadow">
+        <div class="col-md-6 px-md-5 my-auto">
+          <h4 class="features-title">Your Users</h4>
+          <p class="features">It takes no time at all to integrate Huddle with your app's authentication solution.This means, once signed in to your app, your users can start chatting immediately.</p>
+        </div>
+        <div class="col-md-6 px-md-5 my-3">
+          <img class="img-fluid" src="images/illustration-your-users.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="cta">
+    <div class="container">
+      <div class="row p-3 h-100 round-border shadow text-center cta-box">
+        <div class="col-md-12 px-md-5 my-auto">
+          <h3 class="cta-heading">Ready To Build Your Community?</h3>
+          <button class="btn btn-success btn-lg rounded-pill main-button shadow" type="button" name="button">Get Started For Free</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Generate meaningful discussions with your audience and build a strong, loyal community. 
-  Think of the insightful conversations you miss out on with a feedback form. 
+  <section id="contact">
+    <div class="container">
+      <div class="row mt-5 p-3 pt-5 h-100">
+        <div class="col-md-12 mt-5">
+          <img class="img-fluid" src="images/logo.svg" alt="">
+        </div>
+      </div>
+      <div class="row mt-5 p-3 h-100">
+        <div class="col-lg-5">
+          <div class="table-responsive">
+            <table class="table contact-table">
+              <tr>
+                <td><img src="images/icon-location.svg" alt=""></td>
+                <td>
+                  <p class="contact-info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua</p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/icon-phone.svg" alt=""></td>
+                <td>
+                  <p class="contact-info">+1-543-123-4567</p>
+                </td>
+              </tr>
+              <tr>
+                <td><img src="images/icon-email.svg" alt=""></td>
+                <td>
+                  <p class="contact-info">example@huddle.com</p>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div class="col-lg-2">
+          <ul>
+            <li class="nav-link"><a href="#">About Us</a></li>
+            <li class="nav-link"><a href="#">What We Do</a></li>
+            <li class="nav-link"><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <ul>
+            <li class="nav-link"><a href="#">Career</a></li>
+            <li class="nav-link"><a href="#">Blog</a></li>
+            <li class="nav-link"><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 text-center">
+          <i class="social-icon fab fa-facebook fa-2x mx-1"></i>
+          <i class="social-icon fab fa-twitter fa-2x mx-1"></i>
+          <i class="social-icon fab fa-instagram fa-2x mx-1"></i>
+        </div>
+        <div class="col-12 text-lg-right text-center m-3">
+          &copy; Copyright 2018 Huddle. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </section>
 
-  Flowing Conversations
 
-  You wouldn't paginate a conversation in real life, so why do it online? Our threads 
-  have just-in-time loading for a more natural flow.
-
-  Your Users
-
-  It takes no time at all to integrate Huddle with your app's authentication solution. 
-  This means, once signed in to your app, your users can start chatting immediately.
-
-  Ready To Build Your Community?
-
-  Get Started For Free
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-  incididunt ut labore et dolore magna aliqua
-
-  +1-543-123-4567
-  example@huddle.com
-
-  About Us
-  What We Do
-  FAQ
-
-  Career
-  Blog
-  Contact Us
-
-  &copy; Copyright 2018 Huddle. All rights reserved.
-
-  <footer>
+  <footer class="footer">
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
 </body>
+
 </html>
