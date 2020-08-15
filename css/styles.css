@@ -67,16 +67,13 @@
 
 
 .cta-box {
-  margin: 5rem 14rem 0;
+  margin: 1rem 14rem 0;
   position: relative;
   z-index: 1;
   top: 8rem;
   background-color: #ffffff;
 }
 
-/* .bottom {
-  position: relative;
-} */
 
 /* contact */
 #contact {
@@ -90,18 +87,6 @@
 #contact a {
   color: #ffffff;
 }
-
-@media (max-width: 1000px) {
-
-  .cta-box {
-    position: static;
-    margin: 5rem 1.5rem;
-  }
-  #contact {
-    position: static;
-  }
-}
-
 
 .nav-link {
   margin-bottom: 1rem;
@@ -122,5 +107,17 @@
   margin-bottom: 0;
 }
 .attribution a {
-  color: #3e52a3;
+  color: #ffd571;
+ }
+
+ /* @media */
+ @media (max-width: 1000px) {
+
+   .cta-box {
+     position: static;
+     margin: 1rem 1.5rem;
+   }
+   #contact {
+     position: static;
+   }
  }
