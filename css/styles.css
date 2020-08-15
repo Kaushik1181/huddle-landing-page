@@ -120,4 +120,16 @@
    #contact {
      position: static;
    }
+
+   .main-button {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+     background-color: #fd52c1;
+     border-color: #fd52c1;
+     color: #ffffff;
+     font-size: 80%;
+     margin: 1rem 0 2rem;
+     padding: 1rem 2rem;
+   }
+
  }
